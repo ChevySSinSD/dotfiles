@@ -7,8 +7,11 @@
 - Based off [How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
 
 ## My installed repositories (on top of default LMDE)
-- [google-chrome-stable:amd64](https://www.google.com/intl/en_us/chrome/)
+- [Google Chrome](https://www.google.com/intl/en_us/chrome/)
+- [Spotify](https://www.spotify.com/us/download/linux/)
 - git
+- htop
+- ranger
 
 ## OS Base Install
 [Linux Mint Debian Edition 5 "Elsie"](https://blog.linuxmint.com/?p=4287)
