@@ -13,7 +13,6 @@
 [![Inkscape](https://img.shields.io/badge/Inkscape-e0e0e0?style=for-the-badge&logo=inkscape&logoColor=080A13)](https://packages.debian.org/inkscape)
 [![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)](https://www.spotify.com/us/download/linux/)
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)](https://packages.debian.org/steam)
-
 <br/>
 [![Htop](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breezeicons-apps-48-htop.svg) htop](https://packages.debian.org/htop)
 [<img src="https://raw.githubusercontent.com/ranger/ranger-assets/f36bccaa8df4d345f9def63cb6e25ea1990ce99c/logo/ranger312.svg" width=42 alt="Ranger"> Ranger](https://packages.debian.org/ranger)
