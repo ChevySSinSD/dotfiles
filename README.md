@@ -7,7 +7,7 @@
 - Based off [How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
 
 ## My installed repositories (on top of default LMDE)
-- ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white) [Google Chrome](https://www.google.com/intl/en_us/chrome/)
+- [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)](https://www.google.com/intl/en_us/chrome/)
 - ![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white) [Spotify](https://www.spotify.com/us/download/linux/)
 - ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) Git
 - ![Htop](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breezeicons-apps-48-htop.svg) htop
