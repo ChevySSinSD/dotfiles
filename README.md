@@ -1,12 +1,13 @@
 # My Linux Mint Debian Edition Config
 ## Dotfiles
 ### .bashrc
-- Bullet Train prompt based off [Lucas .bashrc](https://github.com/lucascosti/bashrc/commit/fb3ce2b0c2193d27c20a6c4cb64bb443506c5849)
+- Bullet Train prompt based off [Lucas .bashrc final Linux commit](https://github.com/ChevySSinSD/bashrc)
+- [Powerline fonts](https://github.com/powerline/fonts)
 
-## This Repository
-- Based off [How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+## Setting Up This Repository
+[How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
 
-## My installed repositories (on top of default LMDE)
+## My other installed repositories (on top of default LMDE)
 [![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)](https://packages.debian.org/gimp)
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://packages.debian.org/git)
 [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)](https://www.google.com/intl/en_us/chrome/)

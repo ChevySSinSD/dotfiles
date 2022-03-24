@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# Neofetch
+# Launch Neofetch
 neofetch
 
 # If not running interactively, don't do anything
@@ -114,4 +114,145 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Eric's Configs
+
+#Git
+##Git aliases
 alias config='/usr/bin/git --git-dir=/home/eric/.cfg/ --work-tree=/home/eric'
+alias g='git'
+alias gfu='git fetch upstream'
+alias gfo='git fetch origin'
+alias gr='git rebase'
+alias gs='git status'
+alias gc='git checkout'
+alias gl="git log --pretty=format:'%Cblue%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset' --abbrev-commit --date=relative"
+alias gbranches='git branch -a'
+alias gnb='git checkout -b'
+alias gnewbranch='git checkout -b'
+alias grmbranch='git branch -d'
+alias gd='git diff'
+alias gss='git stash save'
+alias gsp='git stash pop'
+alias gsl='git stash list'
+alias ga='git add'
+alias gaa='git add -A'
+alias gcom='git commit'
+alias gcommam='git add -A && git commit -m'
+alias gcomma='git add -A && git commit'
+alias gcommend='git add -A && git commit --amend --no-edit'
+alias gm='git merge'
+alias gcp='git cherry-pick'
+alias gpoh='git push origin HEAD'
+alias gcd='cd ~/Git/'
+### From https://docs.gitlab.com/ee/user/project/merge_requests/#checkout-merge-requests-locally : e.g. gcmr upstream 12345
+gcmr() { git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2; }
+### This function prunes references to deleted remote branches and
+### deletes local branches that have been merged and/or deleted from the remotes.
+### It is intended to be run when on a master branch, and warns when it isn't.
+gclean (){
+  local BRANCH=`git rev-parse --abbrev-ref HEAD`
+  # Warning if not on a master* branch
+  if [[ $BRANCH != master* ]]
+  then
+    echo -e "\e[91m!! WARNING: It looks like you are not on a master branch !!\e[39m"
+    read -r -p "Are you sure you want to continue? [y/N] " response
+    if ! [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+    then
+      echo "Aborted. Nothing was changed."
+      return 1
+    fi
+  fi
+  echo "Simulating a clean on $BRANCH ..." \
+  && echo "===== 1/3: simulating pruning origin =====" \
+  && git remote prune origin --dry-run \
+  && echo "===== 2/3: simulating pruning upstream =====" \
+  && git remote prune upstream --dry-run \
+  && echo "===== 3/3: simulating cleaning local branches merged to $BRANCH =====" \
+  && git branch --merged $BRANCH | grep -v "^\**\s*master"  \
+  && echo "=====" \
+  && echo "Simulation complete."
+  read -r -p "Do you want to proceed with the above clean? [y/N] " response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+  then
+    echo "Running a clean on $BRANCH ..."
+    echo "===== 1/3: pruning origin =====" \
+    && git remote prune origin \
+    && echo "===== 2/3: pruning upstream =====" \
+    && git remote prune upstream \
+    && echo "===== 3/3: cleaning local branches merged to $BRANCH =====" \
+    && git branch --merged $BRANCH | grep -v "^\**\s*master" | xargs git branch -d \
+    && echo "=====" \
+    && echo "Clean finished."
+  else
+    echo "Aborted. Nothing was changed."
+  fi
+}
+### Sync local and origin branch from upstream: runs a fetch from upstream + rebase local + push to origin
+gsync (){
+  local BRANCH=`git rev-parse --abbrev-ref HEAD`
+  echo "Syncing the current branch: $BRANCH"
+  echo "===== 1/3: fetching upstream =====" \
+  && git fetch upstream \
+  && echo "===== 2/3: rebasing $BRANCH =====" \
+  && git rebase upstream/$BRANCH \
+  && echo "===== 3/3: pushing to origin/$BRANCH =====" \
+  && git push origin $BRANCH \
+  && echo "=====" \
+  && echo "Syncing finished."
+}
+### Function to take git interactive rebase argument. e.g.: gir 2
+gri() { git rebase -i HEAD~$1; }
+gir() { git rebase -i HEAD~$1; }
+### Function to undo all changes (including stages) back to the last commit, with a confirmation.
+gundoall () {
+  echo "WARNING: This will delete all untracked files, and undo all changes since the last commit."
+  read -r -p "Are you sure? [y/N] " response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+  then
+    echo "===== 1/2: git reset --hard HEAD =====" \
+    && git reset --hard HEAD \
+    && echo "===== 2/2: git clean -fd \$(git rev-parse --show-toplevel) =====" \
+    && git clean -fd $(git rev-parse --show-toplevel)
+  else
+    echo "Aborted. Nothing was changed."
+  fi
+}
+
+
+## git bash completion for aliases
+# To Setup:
+# 1) Save the .git-completion.bash file found here:
+#    https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+# 2) Add the following lines to your .bash_profile, be sure to reload (for example: source ~/.bash_profile) for the changes to take effect:
+if [ -f ~/bashscripts/git-completion.bash ]; then
+  . ~/bashscripts/git-completion.bash
+
+  # Add git completion to the aliases: you must manually match each of your aliases to the respective function for the git command defined in git-completion.bash.
+  __git_complete g __git_main
+  __git_complete gc _git_checkout
+  __git_complete gnb _git_checkout
+  __git_complete gnewbranch _git_checkout
+  __git_complete gm _git_merge
+  __git_complete grmbranch _git_branch
+  __git_complete gr _git_rebase
+  __git_complete gl _git_log
+  __git_complete ga _git_add
+  __git_complete gd _git_diff
+  __git_complete gcom _git_commit
+  __git_complete gcomma _git_commit
+  __git_complete gcmr _git_ls_remote
+fi
+
+## Custom git prompt configuration https://github.com/magicmonty/bash-git-prompt
+  # Set config variables first
+  GIT_PROMPT_ONLY_IN_REPO=0
+
+  # GIT_PROMPT_FETCH_REMOTE_STATUS=0   # uncomment to avoid fetching remote status
+
+  # Lucas: change fetch interval to 60 minutes (default is 5)
+  GIT_PROMPT_FETCH_TIMEOUT=60
+
+  # as last entry source the gitprompt script
+  GIT_PROMPT_THEME=Lucas_bullettrain_tags # use custom .git-prompt-colors.sh
+  source ~/bashscripts/bash-git-prompt/gitprompt.sh
