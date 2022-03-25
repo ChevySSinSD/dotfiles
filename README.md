@@ -27,6 +27,7 @@ Set up chrome extension and python server that allows you to play videos in webp
 <br/>
 [![Htop](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breezeicons-apps-48-htop.svg) htop](https://packages.debian.org/htop)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Mpv_logo_%28official%29.png" width=42 alt="MPV"> MPV](https://www.deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv)
+[Papirus Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 [Powerline fonts](https://github.com/powerline/fonts)
 [<img src="https://raw.githubusercontent.com/ranger/ranger-assets/f36bccaa8df4d345f9def63cb6e25ea1990ce99c/logo/ranger312.svg" width=42 alt="Ranger"> Ranger](https://packages.debian.org/ranger)
 [Roboto Fonts](https://packages.debian.org/fonts-roboto)
