@@ -105,7 +105,7 @@ fi
 
 # Eric's Configs
 #Apt
-alias aptuua='sudo apt update-y && sudo apt upgrade -y && sudo apt autoremove -y'
+alias aptuua='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 
 #Git
 ##Git aliases
