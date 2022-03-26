@@ -13,6 +13,9 @@ Set up chrome extension and python server that allows you to play videos in webp
 1. Follow instructions to install Chrome extension: [Play with MPV](https://github.com/Thann/play-with-mpv)
 1. Set Play with MPV to run on starup: 'cp ~/.local/share/applications/thann.play-with-mpv.desktop ~/.config/autostart'
 
+### ~/.config/rofi/config.rasi (Rofi)
+Set theme, icons, fonts, modes for Rofi
+
 ## Setting Up This Repository
 [How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
 
