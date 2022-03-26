@@ -1,0 +1,12 @@
+configuration {
+	modi: "window,run,ssh,drun";
+	theme: "Adapta-Nokto";
+	font: "Roboto Medium 13";
+	show-icons: true;
+	icon-theme: "Papirus-Dark";
+	columns: 2;
+        kb-mode-next: "Shift+Right,Control+Right";
+        kb-mode-previous: "Shift+Left,Control+Left";
+	kb-move-word-back: "Alt+b";
+	kb-move-word-forward: "Alt+f";
+}
