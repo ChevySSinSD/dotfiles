@@ -1,4 +1,13 @@
-# My Linux Mint Debian Edition Config
+# My Linux Debian i3 Gaps Config
+## [![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=Debian)](https://debian.org) Base Install
+- [Debian non free firmware net install (11.3.0 as of 26MAR2022)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-cd/)
+- Manual config of /etc/network/interfaces to get wifi up
+
+## i3 Gaps Install
+1. Install git
+1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
+1. Install lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
+
 ## Dotfiles
 ### .bashrc (Arch Linux like prompts with git support)
 - Bullet Train prompt based off [Lucas .bashrc final Linux commit](https://github.com/ChevySSinSD/bashrc)
