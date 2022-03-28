@@ -6,7 +6,7 @@
 ## i3 Gaps Install
 1. Install git
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
-1. Install lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
+1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
 
 ## Dotfiles
 ### .bashrc (Arch Linux like prompts with git support)
