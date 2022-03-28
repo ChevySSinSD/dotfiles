@@ -23,8 +23,6 @@
 [![Python](https://img.shields.io/badge/pip-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://packages.debian.org/python3-pip)
 [![Ranger](https://img.shields.io/badge/Ranger-FF7F12?style=for-the-badge&logo=windows+terminal)](https://packages.debian.org/ranger)
 [![Rofi](https://img.shields.io/badge/Rofi-000000?style=for-the-badge&logo=windows+terminal)](https://packages.debian.org/rofi)
-<!--[![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)](https://www.spotify.com/us/download/linux/)
-#[![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)](https://packages.debian.org/steam) -->
 <br/>
 [<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Mpv_logo_%28official%29.png" width=42 alt="MPV"> MPV](https://www.deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv)
 [Papirus Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
