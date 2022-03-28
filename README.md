@@ -8,26 +8,6 @@
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
 1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
 
-## Dotfiles
-### .bashrc (Arch Linux like prompts with git support)
-- Bullet Train prompt based off [Lucas .bashrc final Linux commit](https://github.com/ChevySSinSD/bashrc)
-- Note: must install powerline fonts to work properly (see below)
-
-### mpv.conf and ~/.config/autostart/ (Play with MPV)
-Set up chrome extension and python server that allows you to play videos in webpages with MPV instead of browser.
-1. [Add debian multimedia repositories to apt get correct version of MPV and dependencies](https://hackernoon.com/install-deb-multimedia-repositories-on-debian-and-kali-linux-vy5o3y4q) (need version high enough to support yt-dlp)
-1. Install MPV with apt
-1. Install [yt-dlb](https://github.com/yt-dlp/yt-dlp#installation) 
-1. Next, follow these directions to configure MPV with yt-dlb: [Replace youtube-dl With yt-dlp](https://www.funkyspacemonkey.com/replace-youtube-dl-with-yt-dlp-how-to-make-mpv-work-with-yt-dlp)
-1. Follow instructions to install Chrome extension: [Play with MPV](https://github.com/Thann/play-with-mpv)
-1. Set Play with MPV to run on starup: 'cp ~/.local/share/applications/thann.play-with-mpv.desktop ~/.config/autostart'
-
-### ~/.config/rofi/config.rasi (Rofi)
-Set theme, icons, fonts, modes for Rofi
-
-## Setting Up This Repository
-[How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
-
 ## My other installed repositories (on top of default LMDE)
 [![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)](https://packages.debian.org/gimp)
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://packages.debian.org/git)
@@ -45,5 +25,22 @@ Set theme, icons, fonts, modes for Rofi
 [Powerline fonts](https://github.com/powerline/fonts)
 [Roboto Fonts](https://packages.debian.org/fonts-roboto)
 
-## OS Base Install
-[![Linux Mint](https://img.shields.io/badge/Linux%20Mint-87CF3E?style=for-the-badge&logo=Linux%20Mint&logoColor=white) LMDE 5 "Elsie"](https://blog.linuxmint.com/?p=4287)
+## Setting Up This Repository
+[How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+
+## Dotfiles
+### .bashrc (Arch Linux like prompts with git support)
+- Bullet Train prompt based off [Lucas .bashrc final Linux commit](https://github.com/ChevySSinSD/bashrc)
+- Note: must install powerline fonts to work properly (see below)
+
+### mpv.conf and ~/.config/autostart/ (Play with MPV)
+Set up chrome extension and python server that allows you to play videos in webpages with MPV instead of browser.
+1. [Add debian multimedia repositories to apt get correct version of MPV and dependencies](https://hackernoon.com/install-deb-multimedia-repositories-on-debian-and-kali-linux-vy5o3y4q) (need version high enough to support yt-dlp)
+1. Install MPV with apt
+1. Install [yt-dlb](https://github.com/yt-dlp/yt-dlp#installation) 
+1. Next, follow these directions to configure MPV with yt-dlb: [Replace youtube-dl With yt-dlp](https://www.funkyspacemonkey.com/replace-youtube-dl-with-yt-dlp-how-to-make-mpv-work-with-yt-dlp)
+1. Follow instructions to install Chrome extension: [Play with MPV](https://github.com/Thann/play-with-mpv)
+1. Set Play with MPV to run on starup: 'cp ~/.local/share/applications/thann.play-with-mpv.desktop ~/.config/autostart'
+
+### ~/.config/rofi/config.rasi (Rofi)
+Set theme, icons, fonts, modes for Rofi
