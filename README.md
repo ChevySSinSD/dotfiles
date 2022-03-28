@@ -7,6 +7,7 @@
 1. Install git
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
 1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
+1. Download and install [Google Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
 ## My other installed repositories (on top of default LMDE)
 [![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)](https://packages.debian.org/gimp)
