@@ -8,6 +8,7 @@
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
 1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
 1. Download and install [Google Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+1. Add [Debian multimedia repository](https://deb-multimedia.org/)
 
 ## Setting Up This Repository
 1. [Set up git SSH keyring](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
