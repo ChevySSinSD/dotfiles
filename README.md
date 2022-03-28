@@ -9,6 +9,10 @@
 1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
 1. Download and install [Google Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 
+## Setting Up This Repository
+1. [Set up git SSH keyring](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+1. [How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+
 ## My other installed repositories (on top of default LMDE)
 [![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)](https://packages.debian.org/gimp)
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://packages.debian.org/git)
@@ -25,9 +29,6 @@
 [Papirus Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 [Powerline fonts](https://github.com/powerline/fonts)
 [Roboto Fonts](https://packages.debian.org/fonts-roboto)
-
-## Setting Up This Repository
-[How to store dotfiles | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
 
 ## Dotfiles
 ### .bashrc (Arch Linux like prompts with git support)
