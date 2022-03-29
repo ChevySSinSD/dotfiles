@@ -27,7 +27,9 @@
 [<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Mpv_logo_%28official%29.png" width=42 alt="MPV"> MPV](https://www.deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv)
 [Papirus Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 [Roboto Fonts](https://packages.debian.org/fonts-roboto)
-[Hack Fonts)(https://packages.debian.org/fonts-hack-ttf)
+[Hack Fonts](https://packages.debian.org/fonts-hack-ttf)
+[xss-lock](https://packages.debian.org/xss-lock)
+[Network Manager](https://packages.debian.org/network-manager)
 
 ## Dotfiles
 ### .bashrc (Arch Linux like prompts with git support)
