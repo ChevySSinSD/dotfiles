@@ -47,4 +47,4 @@ URxvt.font: xft:Roboto Mono Medium for Powerline:size=13
 *.color15: #e0e8f3
 
 !Background
-urxvt*background:rgba:2400/1a00/3800/fa00
+*.background:rgba:2400/1a00/3800/fa00
