@@ -6,7 +6,7 @@
 ## i3 Gaps Install
 1. Install git
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
-1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol dex feh thunar
+1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol dex feh thunar cups
 1. Download and install [Google Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 1. Add [Debian multimedia repository](https://deb-multimedia.org/)
 
@@ -27,6 +27,9 @@
 [<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Mpv_logo_%28official%29.png" width=42 alt="MPV"> MPV](https://www.deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv)
 [Papirus Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 [Roboto Fonts](https://packages.debian.org/fonts-roboto)
+[Hack Fonts](https://packages.debian.org/fonts-hack-ttf)
+[xss-lock](https://packages.debian.org/xss-lock)
+[Network Manager](https://packages.debian.org/network-manager)
 
 ## Dotfiles
 ### .bashrc (Arch Linux like prompts with git support)
