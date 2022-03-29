@@ -10,3 +10,4 @@ configuration {
 	kb-move-word-back: "Alt+b";
 	kb-move-word-forward: "Alt+f";
 }
+@import "/usr/share/rofi/themes/Pop-Dark.rasi"
