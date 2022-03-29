@@ -38,7 +38,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
+
+# Switch monitor mode
+bindsym $mod+Shift+s exec --no-startup-id /home/eric/scripts/display/chgdisplay.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -70,6 +73,8 @@ bindsym $mod+d exec $rofi appmenu
 bindsym $mod+Tab exec $rofi tabmenu
 bindsym $mod+Shift+e exec $rofi powermenu
 
+# Startup polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # change focus
 bindsym $mod+j focus left
@@ -199,7 +204,7 @@ bindsym $mod+r mode "resize"
 #}
 
 ### Theme additions ###
-#Run startup wallpaper
+# Run startup wallpaper
 exec_always feh --bg-fill ~/images/wall/mount-fuji.jpg
 
 # Allow scripts to interface with dbus
@@ -210,8 +215,7 @@ exec_always --no-startup-id pkill picom; picom --no-use-damage
 exec_always --no-startup-id pkill dunst; dunst
 
 # Use URxvt settings from Xresources
-#exec_always --no-startup-id xrdb ~/.Xresources
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id xrdb ~/.Xresources
 
 ### i3-gaps stuff ###
 
