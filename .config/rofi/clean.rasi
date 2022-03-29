@@ -1,25 +1,23 @@
 configuration {
-    modi: "window,run,drun";
+    modi: "window,run,drun,ssh";
     show-icons: true;
     font: "Hack Nerd Font 15";
 }
 
 @import "colors.rasi"
 
-* {
+/* {
     selected-foreground: black;
-}
+} */
 
 #window {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 140px 250px;
+    width: 75%;
+    height: 75%;
+    background-color: @background-solid;
 }
 
 #mainbox {
     border:  0;
-    border-radius: 22;
     padding: 40;
     background-color: @background-solid;
 }
@@ -29,18 +27,18 @@ configuration {
 }
 
 #listview {
-    columns: 5;
+    columns: 2;
     spacing: 0px;
     cycle: false;
     dynamic: true;
     layout: vertical;
     background-color: transparent;
-    padding: 12px 0px 0px 0px;
+    padding: 6px 0px 0px 0px;
 }
 
 element {
     margin: 10px 0 10 0;
-    padding: 34px;
+    padding: 17px;
     border-radius: 16px;
     orientation: vertical;
 }
