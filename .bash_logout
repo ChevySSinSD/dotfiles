@@ -7,4 +7,4 @@ if [ "$SHLVL" = 1 ]; then
 fi
 
 # Close chrome properly
-pkill google-chrome-stable
+pkill google*
