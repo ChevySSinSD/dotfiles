@@ -9,9 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# If laptop is closed, turn off the laptop screen.
-exec_always --no-startup-id ~/scripts/display/lidclosed.sh
-
+#Set the mod key
 set $mod Mod4
 
 # Set common scripts to vars
@@ -78,6 +76,9 @@ bindsym $mod+Shift+e exec $rofi powermenu
 
 # Startup polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Startup power manager
+exec_always --no-startup-id xfce4-power-manager
 
 # change focus
 bindsym $mod+j focus left

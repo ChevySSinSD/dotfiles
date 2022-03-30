@@ -13,7 +13,7 @@ notifier="dunstify"
 notifyText=""
 img="gnome-music"
 
-musicDir="/home/kai/music"
+musicDir="/home/eric/music"
 thumbs="/thumbs"
 
 
