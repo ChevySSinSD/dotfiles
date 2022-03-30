@@ -6,7 +6,7 @@
 ## i3 Gaps Install
 1. Install git
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
-1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol dex feh thunar cups
+1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol dex feh thunar cups xfce4-power-manager
 1. Download and install [Google Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
 1. Add [Debian multimedia repository](https://deb-multimedia.org/)
 
