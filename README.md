@@ -1,7 +1,9 @@
 # My Linux Debian i3 Gaps Config
 ## [![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=Debian)](https://debian.org) Base Install
 - [Debian non free firmware net install (11.3.0 as of 26MAR2022)](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-cd/)
-- Manual config of /etc/network/interfaces to get wifi up
+- Set terminal font size to something reasonable `sudo dpkg-reconfigure console-setup`
+- Manual config of /etc/network/interfaces and reboot
+- Apply [Bluetooth firmware patch](https://github.com/winterheart/broadcom-bt-firmware) `wget https://github.com/winterheart/broadcom-bt-firmware/releases/latest/download/broadcom-bt-firmware-10.1.0.1115.deb` then `sudo apt install ./broadcom-bt-firmware-10.1.0.1115.deb`
 
 ## i3 Gaps Install
 1. Install git
