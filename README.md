@@ -9,7 +9,7 @@
 1. Install git
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
 1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
-1. [Fix xorg graphics bug](https://bbs.archlinux.org/viewtopic.php?id=198157) `sudo nano //etc/X11/xorg.conf.d/20-intel.conf` and add the following: 
+1. [Fix xorg graphics bug](https://bbs.archlinux.org/viewtopic.php?id=198157) `sudo nano /usr/share/X11/xorg.conf.d/20-intel.conf` and add the following: 
 ```
 Section "Device"
   Identifier "Intel Graphics"
