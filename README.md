@@ -8,9 +8,18 @@
 ## i3 Gaps Install
 1. Install git
 1. Install [i3 Gaps Debian](https://github.com/maestrogerardo/i3-gaps-deb)
-1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol dex feh thunar cups xfce4-power-manager
-1. Download and install [Google Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
-1. Add [Debian multimedia repository](https://deb-multimedia.org/)
+1. Install xorg lightdm [pulseaudio](https://wiki.debian.org/PulseAudio) pavucontrol
+1. [Fix xorg graphics bug](https://bbs.archlinux.org/viewtopic.php?id=198157) `sudo nano //etc/X11/xorg.conf.d/20-intel.conf` and add the following: 
+```
+Section "Device"
+  Identifier "Intel Graphics"
+  Driver "intel"
+  Option "AccelMethod" "uxa"
+  #Option "AccelMethod"  "sna"  
+EndSection
+```
+5. Download and install [Google Chrome](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+5. Add [Debian multimedia repository](https://deb-multimedia.org/)
 
 ## Setting Up This Repository
 1. [Set up git SSH keyring](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
@@ -34,6 +43,7 @@
 [Network Manager](https://packages.debian.org/network-manager)
 [spotify-tui](https://github.com/Rigellute/spotify-tui)
 [spotifyd](https://github.com/Spotifyd/spotifyd)
+dex feh thunar cups xfce4-power-manager
 
 ## Dotfiles
 ### .bashrc (Arch Linux like prompts with git support)
